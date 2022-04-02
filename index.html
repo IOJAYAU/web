@@ -8,6 +8,66 @@
     <style>
         body {
             margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #424242;
             background-size: 100% 100%;
@@ -57,51 +117,73 @@
         }
 
         th {
-            background-color: yellow;
+            background-color: white;
             color: black;
         }
     </style>
 </head>
 
 <body>
-    <h1 style="background-color:DodgerBlue;">Hello World</h1>
-    <p style="background-color:white;">Click <a style="text-decoration:none" href="https://hbd.oramaag.gq/">here</a> to
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contract">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+    </ul>
+    <h1 style="background-color:DodgerBlue; text-align: center;">Testing
+        Website</h1>
+    <p style="background-color:yellow;text-align: center;">Click <a style="text-decoration:none; text-align: center;"
+            href="https://hbd.oramaag.gq/">here</a> to
         go to sub website.</p>
-    <p style="background-color:Tomato;">
-        Hello everyone,</br>
-        This is an announcement from the creator of this website, OraMAAG.
     </p>
     <div class="video-container">
-        <iframe width="755" height="425" src="https://www.youtube.com/embed/7940nuwCEYA?autoplay=1" title="YouTube video player"
+        <iframe width="1280" height="745" src="https://en.wikipedia.org/wiki/Main_Page" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
-    <table id="table1" style="background-color:#33475b">
-        <tr>
-            <th>Name</th>
-            <th>Job Title</th>
-            <th>Email address</th>
-        </tr>
-        <tr>
-            <td>OraMAAG</td>
-            <td>Developer</td>
-            <td><a style="text-decoration:none"
-                    href="mailto:develop@oramaag.gq?subject=Developer Contract">oramaag@oramaag.gq</a></td>
-        </tr>
-        <tr>
-            <td>OraMAAG</td>
-            <td>CEO</td>
-            <td><a style="text-decoration:none" href="mailto:ceo@oramaag.gq?subject=CEO Contract">eco@oramaag.gq</a>
-            </td>
-        </tr>
-        <tr>
-            <td>OraMAAG</td>
-            <td>Human Relationship</td>
-            <td><a style="text-decoration:none"
-                    href="mailto:services@oramaag.gq?subject=Service Contract">services@oramaag.gq</a></td>
-        </tr>
-    </table>
+    <div id="news">
+
+
+
+
+    </div>
+    </br>
+    <div id="about">
+        <table id="table1" style="background-color:#33475b">
+            <tr>
+                <th>Name</th>
+                <th>Job Title</th>
+                <th>Email address</th>
+            </tr>
+            <tr>
+                <td>OraMAAG</td>
+                <td>Developer</td>
+                <td><a style="text-decoration:none; color: white;"
+                        href="mailto:develop@oramaag.gq?subject=Developer Contract">develop@oramaag.gq</a></td>
+            </tr>
+            <tr>
+                <td>OraMAAG</td>
+                <td>CEO</td>
+                <td><a style="text-decoration:none; color: white;"
+                        href="mailto:ceo@oramaag.gq?subject=CEO Contract">ceo@oramaag.gq</a>
+                </td>
+            </tr>
+            <tr>
+                <td>OraMAAG</td>
+                <td>Human Relationship</td>
+                <td><a style="text-decoration:none; color: white;"
+                        href="mailto:services@oramaag.gq?subject=Service Contract">services@oramaag.gq</a></td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
