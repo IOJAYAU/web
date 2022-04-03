@@ -88,6 +88,12 @@
             height: 0;
         }
 
+        iframe {
+            display: block;
+            margin: 0 auto;
+            background-color: #777;
+        }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -126,7 +132,7 @@
 <body>
     <ul>
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="#data">Data</a></li>
         <li><a href="#contract">Contact</a></li>
         <li><a href="#about">About</a></li>
         <li class="dropdown">
@@ -137,23 +143,25 @@
                 <a href="#">Link 3</a>
             </div>
     </ul>
+    <audio autoplay loop>
+        <source src="file/Machigai Sagashi.mp3" type="audio/mpeg">
+        <p>Your browser doesn't support HTML5 audio. Here is
+            a <a href="file/Machigai Sagashi.mp3">link to the audio</a> instead.</p>
+    </audio>
     <h1 style="background-color:DodgerBlue; text-align: center;">Testing
         Website</h1>
     <p style="background-color:yellow;text-align: center;">Click <a style="text-decoration:none; text-align: center;"
             href="https://hbd.oramaag.gq/">here</a> to
         go to sub website.</p>
     </p>
-    <div class="video-container">
-        <iframe width="1280" height="745" src="https://en.wikipedia.org/wiki/Main_Page" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-    <div id="news">
 
-
-
-
+    <div id="data">
+        <p
+            style="font-size:xx-large; font-weight: bold; color: white; text-align: center; background-color: rgb(0, 85, 28);">
+            Data</p>
+        <iframe width=50% height="1068" 
+            src="https://datastudio.google.com/embed/reporting/199569a0-f51c-4503-b852-d3b1cd17ecba/page/rGQiC"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     </br>
     <div id="about">
